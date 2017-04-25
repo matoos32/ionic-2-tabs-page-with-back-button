@@ -10,7 +10,6 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { TabsWrapperPage } from '../pages/tabs-wrapper/tabs-wrapper';
-import { LoremipsumPage } from '../pages/loremipsum-page/loremipsum-page';
 import { LandingPage } from '../pages/landing-page/landing-page';
 
 @NgModule({
@@ -21,7 +20,6 @@ import { LandingPage } from '../pages/landing-page/landing-page';
     HomePage,
     TabsPage,
     TabsWrapperPage,
-    LoremipsumPage,
     LandingPage
   ],
   imports: [
@@ -35,7 +33,6 @@ import { LandingPage } from '../pages/landing-page/landing-page';
     HomePage,
     TabsPage,
     TabsWrapperPage,
-    LoremipsumPage,
     LandingPage
   ],
   providers: [
