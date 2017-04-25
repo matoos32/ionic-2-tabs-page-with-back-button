@@ -1,6 +1,6 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>Tabs Wrapper</ion-title>
+    <ion-title>Tabs Wrapper: {{tabTitle}}</ion-title>
   </ion-navbar>
 </ion-header>
 
@@ -8,7 +8,10 @@
 
   <!-- Wrap an instance of the tabs page. Navigation will operate on the wrapper
        and the back button will be provided. To eliminate the nested header in each
-       specific tab page, delete the ion-header in each tab's html file. -->
-  <tabs></tabs>
+       specific tab page, delete the ion-header in each tab's html file.
+       Hook a Component @Output event to dynamically update the ion-title in
+       the ion-navbar above when tabs are selected.
+  -->
+  <tabs (notify)='onTabChange($event)'></tabs>
 
 </ion-content>

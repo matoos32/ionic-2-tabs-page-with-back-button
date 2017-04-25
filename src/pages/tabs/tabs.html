@@ -1,5 +1,6 @@
 <ion-tabs>
-  <ion-tab [root]="tab1Root" tabTitle="Home" tabIcon="home"></ion-tab>
-  <ion-tab [root]="tab2Root" tabTitle="About" tabIcon="information-circle"></ion-tab>
-  <ion-tab [root]="tab3Root" tabTitle="Contact" tabIcon="contacts"></ion-tab>
+  <!-- Hook the ion-select event so the tab name can be bubbled up to the wrapper -->
+  <ion-tab [root]="tab1Root" (ionSelect)="onTab('Home')" tabTitle="Home" tabIcon="home"></ion-tab>
+  <ion-tab [root]="tab2Root" (ionSelect)="onTab('About')" tabTitle="About" tabIcon="information-circle"></ion-tab>
+  <ion-tab [root]="tab3Root" (ionSelect)="onTab('Contact')" tabTitle="Contact" tabIcon="contacts"></ion-tab>
 </ion-tabs>
